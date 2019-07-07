@@ -1,0 +1,345 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f2f2f2;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.add-book {
+  margin: 0 20px;
+}
+.new-book {
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto 40px;
+  display: flex;
+  background: #fff;
+  padding: 25px;
+  box-sizing: border-box;
+  flex-direction: column;
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+.edit-book {
+  background: transparent;
+  box-shadow: none;
+}
+.save-btn {
+  text-align: right;
+  margin-top: 15px;
+}
+.btn {
+  font-size: 15px;
+    color: #fff;
+    background: #0061a0;
+    padding: 10px 20px;
+    display: inline-block;
+    border: none;
+    width: 180px;
+    height: 40px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+  background: #fff;
+  font-weight: bold;
+  border: 2px solid #0061a0;
+  color: #0061a0;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.btn:focus {
+  outline: 0;
+  font-weight: 700;
+  border-width: 2px;
+}
+.center-btn {
+  margin-top: 20px;
+}
+.edit-btn, .cancel_btn, .save_btn {
+  width: 100px;
+  height: 30px;
+  padding: 0;
+}
+.save_btn{
+  background: #fff;
+  border: 1px solid #0061a0;
+  color: #0061a0;
+  margin-left: 20px;
+}
+.save_btn:hover{
+  background: #0061a0;
+  border: 0;
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+.heading {
+  color: #0a65aa;
+  font-family: "Open Sans", sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 0 0 16px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.nav {
+  background: #0061a0;
+  overflow: hidden;
+}
+.nav ul {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0px;
+  margin: 0;
+  text-decoration: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px #007abc;
+}
+
+.nav li {
+  float: left;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+}
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 34px;
+  display: inline-flex;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.nav li:hover {
+  background: #007abc;
+}
+.active {
+  background: #007abc;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* .nav li:hover:not(.active) {
+  text-decoration: none;
+} */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  width: 80%;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto 20px;
+}
+.search-bar .search input {
+  border: 1px solid #757575;
+  border-radius: 4px;
+  background: #fff;
+  width: 290px;
+  max-width: 340px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.search-bar .search button, .search-bar button.all-books {
+  background: #0061a0;
+  border: 0;
+  color: #fff;
+  padding: 12px 20px;
+  margin-left: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.search-bar button.all-books {
+  background: #fff;
+  border: 2px solid #0061a0;
+  color: #0061a0;
+  padding: 10px 20px;
+}
+.books-list {
+  margin-top: 20px;
+}
+.book-head {
+  text-align: center;
+  overflow: hidden;
+}
+.book-head .heading {
+  font-size: 32px;
+  color: #333;
+  font-weight: 500;
+  margin: 20px 0 40px;
+  display: inline-block;
+  position: relative;
+}
+
+.dashbord-list {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: unset;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dashbord-list li {
+  list-style: none;
+  background: #fff;
+  width: 25%;
+  margin: 1%;
+  position: relative;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+.book-info {
+    margin: 0 auto 20px;
+}
+.book {
+  padding: 10px 20px 0px;
+  margin-top: 10px;
+}
+.book .title {
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 5px 0 20px;
+  font-weight: bold;
+}
+.desc {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.desc span {
+  font-weight: bold;
+}
+
+.bookText{
+  line-height: 20px;
+}
+
+
+.bookHeader {
+  display: flex;
+  margin: 0 auto;
+}
+
+.author {
+  text-transform: capitalize;
+}
+.book-footer {
+  /* display: flex; */
+  justify-content: space-between;
+  /* background: rgba(0, 122, 188, 0.2); */
+  padding: 0px 20px 10px;
+  /* position: absolute; */
+  box-sizing: border-box;
+  width: 100%;
+  bottom: 0;
+}
+.book-footer .count span, .book-footer .author span {
+  font-weight: bold;
+}
+.book-footer .count {
+  margin-bottom: 10px;
+}
+
+input {
+  border: 0;
+  border-bottom: 1px solid;
+  font-size: 15px;
+  padding: 10px 5px;
+  background: transparent;
+}
+.textarea {
+  box-sizing: border-box;
+  background: transparent;
+  border: 0;
+  font-family: sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  /* background-color: #f8f8f8; */
+  resize: none;
+}
+.edit-textarea {
+  min-height: 100px;
+}
+input:focus {
+  outline-offset: none;
+}
+:focus {
+  outline: none;
+}
+textarea:focus {
+  outline-offset: none;
+}
+.not-found {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  align-items: center;
+  height: 100px;
+}
+  
+@media (max-width: 540px) {
+  .search-bar .search input {
+    width: 150px;
+  }
+}
+@media (max-width: 680px) {
+  .search-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .search-bar button.all-books {
+    width: 50%;
+    margin: 20px 0 0;
+    border-radius: 40px;
+}
+}
+@media (max-width: 768px) {
+  .dashbord-list {
+    justify-content: center;
+  }
+  .dashbord-list li {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 980px){
+  .dashbord-list li {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .dashbord-list li {
+    width: 30%;
+  }
+}
